@@ -1,6 +1,6 @@
-# Custom Functions / formatMoney
+# Custom Functions / getWholeNumber
 
-Formats numbers into locale-aware money strings.
+Extracts the whole number portion from a localized formatted number string.
 
 Compatible with FlutterFlow Custom Functions.
 
@@ -14,9 +14,9 @@ If `locale` is null or empty, the function defaults to `en_US`.
 
 ## FlutterFlow Function Parameters
 
-| Name   | Type    | Description                     |
-| ------ | ------- | ------------------------------- |
-| amount | double  | Number to format                |
+| Name | Type | Description |
+|---|---|---|
+| amount | double | Number to format |
 | locale | String? | Locale code (e.g. en_US, id_ID) |
 
 ## Required Package
@@ -35,7 +35,7 @@ import 'package:intl/intl.dart';
 ## Full Function
 
 ```dart
-String? formatMoney(
+String? getWholeNumber(
   double amount,
   String? locale,
 ) {
@@ -49,7 +49,15 @@ String? formatMoney(
   final formatter =
       NumberFormat('#,##0.00', safeLocale);
 
-  return formatter.format(amount);
+  final formatted =
+      formatter.format(amount);
+
+  final decimalSeparator =
+      NumberFormat.decimalPattern(safeLocale)
+          .symbols
+          .DECIMAL_SEP;
+
+  return formatted.split(decimalSeparator).first;
 
   /// MODIFY CODE ONLY ABOVE THIS LINE
 }
@@ -57,8 +65,8 @@ String? formatMoney(
 
 ## Example Outputs
 
-| Locale | Result       |
-| ------ | ------------ |
-| en_US  | 1,234,567.89 |
-| id_ID  | 1.234.567,89 |
-| pl_PL  | 1 234 567,89 |
+| Locale | Input   | Result |
+| ------ | ------- | ------ |
+| en_US  | 1234.56 | 1,234  |
+| id_ID  | 1234.56 | 1.234  |
+| pl_PL  | 1234.56 | 1 234  |
