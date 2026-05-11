@@ -1,6 +1,6 @@
-# Custom Functions / formatMoney
+# Custom Functions / formatNumber
 
-Formats numbers into locale-aware money strings.
+Formats numbers into locale-aware formatted strings with configurable decimal digits.
 
 Compatible with FlutterFlow Custom Functions.
 
@@ -16,8 +16,9 @@ If `locale` is null or empty, the function defaults to `en_US`.
 
 | Name   | Type    | Description                     |
 | ------ | ------- | ------------------------------- |
-| amount | double  | Number to format                |
+| number | double  | Number to format                |
 | locale | String? | Locale code (e.g. en_US, id_ID) |
+| digits | int     | Number of decimal digits        |
 
 ## Required Package
 
@@ -35,9 +36,12 @@ import 'package:intl/intl.dart';
 ## Full Function
 
 ```dart
-String? formatMoney(
-  double amount,
+import 'package:intl/intl.dart';
+
+String? formatNumber(
+  double number,
   String? locale,
+  int digits,
 ) {
   /// MODIFY CODE ONLY BELOW THIS LINE
 
@@ -46,10 +50,15 @@ String? formatMoney(
           ? 'en_US'
           : locale;
 
-  final formatter =
-      NumberFormat('#,##0.00', safeLocale);
+  final pattern =
+      digits > 0
+          ? '#,##0.${'0' * digits}'
+          : '#,##0';
 
-  return formatter.format(amount);
+  final formatter =
+      NumberFormat(pattern, safeLocale);
+
+  return formatter.format(number);
 
   /// MODIFY CODE ONLY ABOVE THIS LINE
 }
@@ -57,8 +66,9 @@ String? formatMoney(
 
 ## Example Outputs
 
-| Locale | Result       |
-| ------ | ------------ |
-| en_US  | 1,234,567.89 |
-| id_ID  | 1.234.567,89 |
-| pl_PL  | 1 234 567,89 |
+| Locale | Digits | Result        |
+| ------ | ------ | ------------- |
+| en_US  | 2      | 1,234,567.89  |
+| en_US  | 0      | 1,234,568     |
+| id_ID  | 2      | 1.234.567,89  |
+| pl_PL  | 3      | 1 234 567,890 |
