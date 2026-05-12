@@ -52,4 +52,4 @@ Supports:
 
 Demo:
 
-![CustomVideoPlayer Demo](./assets/demo_custom_video_player.gif)
+![CustomVideoPlayer Demo](./docs//assets/demo_custom_video_player.gif)
