@@ -22,3 +22,34 @@ Standalone tests are also provided to individually test and validate supported f
 ## Custom Widgets
 
 - [ScrollListener](./docs/scroll_listener.md)
+- [CustomVideoPlayer](./docs/custom_video_player.md)
+
+## Widget Highlights
+
+### ScrollListener
+
+Utility widget for detecting:
+
+- scroll direction
+- top/bottom boundaries
+- overscroll behavior
+- infinite loading triggers
+- scroll-based animations
+
+### CustomVideoPlayer
+
+Customizable video player foundation for FlutterFlow.
+
+Supports:
+
+- custom progress bars
+- custom play/pause buttons
+- buffering callbacks
+- completed callbacks
+- seek support
+- externally controlled playback
+- custom autoplay behavior
+
+Demo:
+
+![CustomVideoPlayer Demo](./assets/demo_custom_video_player.gif)
