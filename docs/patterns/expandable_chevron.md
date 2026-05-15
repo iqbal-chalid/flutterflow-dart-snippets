@@ -111,18 +111,18 @@ duration
 
 ```text
 if isExpanded:
-    -0.5
-else:
     0
+else:
+    -0.5
 ```
 
 #### End Turns
 
 ```text
 if isExpanded:
-    0
-else:
     -0.5
+else:
+    0
 ```
 
 ---
