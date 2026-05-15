@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:flutterflow_dart_snippets/get_decimal_part.dart';
+import 'package:flutterflow_dart_snippets/custom_functions/get_decimal_part.dart';
 
 void main() {
   group('getDecimalPart', () {

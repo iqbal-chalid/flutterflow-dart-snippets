@@ -1,32 +1,60 @@
 # flutterflow-dart-snippets
 
-Reusable Dart snippets, utilities, and helpers primarily for FlutterFlow projects.
+Reusable Dart snippets, utilities, widgets, and implementation patterns primarily for FlutterFlow projects.
 
-Each snippet includes:
+The repository contains:
 
 - ready-to-copy Dart code
+- FlutterFlow custom widgets
+- FlutterFlow implementation patterns
 - required imports and dependencies
 - example outputs
 - standalone test coverage (for supported pure Dart functions)
 
-You can directly copy and paste the code from each `.md` documentation file into your FlutterFlow custom functions or custom widgets.
+You can directly copy and paste the code from each `.md` documentation file into your FlutterFlow custom functions, custom actions, or custom widgets.
 
 Standalone tests are also provided to individually test and validate supported functions outside FlutterFlow.
 
-## Custom Functions
+---
 
-- [formatNumber](./docs/format_number.md)
-- [getDecimalPart](./docs/get_decimal_part.md)
-- [getWholeNumber](./docs/get_whole_number.md)
+# Documentation Structure
 
-## Custom Widgets
+```text
+docs/
+├── assets/
+├── custom_functions/
+├── custom_widgets/
+└── patterns/
+```
 
-- [ScrollListener](./docs/scroll_listener.md)
-- [CustomVideoPlayer](./docs/custom_video_player.md)
+---
 
-## Widget Highlights
+# Custom Functions
 
-### ScrollListener
+- [formatNumber](./docs/custom_functions/format_number.md)
+- [getDecimalPart](./docs/custom_functions/get_decimal_part.md)
+- [getWholeNumber](./docs/custom_functions/get_whole_number.md)
+
+---
+
+# Custom Widgets
+
+- [ScrollListener](./docs/custom_widgets/scroll_listener.md)
+- [CustomVideoPlayer](./docs/custom_widgets/custom_video_player.md)
+
+---
+
+# Patterns
+
+Implementation references and reusable FlutterFlow architecture patterns.
+
+- [ExpandableChevron](./docs/patterns/expandable_chevron.md)
+
+---
+
+# Widget Highlights
+
+## ScrollListener
 
 Utility widget for detecting:
 
@@ -36,7 +64,9 @@ Utility widget for detecting:
 - infinite loading triggers
 - scroll-based animations
 
-### CustomVideoPlayer
+---
+
+## CustomVideoPlayer
 
 Customizable video player foundation for FlutterFlow.
 
@@ -52,4 +82,4 @@ Supports:
 
 Demo:
 
-![CustomVideoPlayer Demo](./docs//assets/demo_custom_video_player.gif)
+![CustomVideoPlayer Demo](./docs/assets/demo_custom_video_player.gif)

@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:flutterflow_dart_snippets/get_whole_number.dart';
+import 'package:flutterflow_dart_snippets/custom_functions/get_whole_number.dart';
 
 void main() {
   group('getWholeNumber', () {

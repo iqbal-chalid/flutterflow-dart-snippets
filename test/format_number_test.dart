@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:flutterflow_dart_snippets/format_number.dart';
+import 'package:flutterflow_dart_snippets/custom_functions/format_number.dart';
 
 void main() {
   group('formatNumber', () {
