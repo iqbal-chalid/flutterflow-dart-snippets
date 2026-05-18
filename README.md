@@ -34,6 +34,8 @@ docs/
 - [formatNumber](./docs/custom_functions/format_number.md)
 - [getDecimalPart](./docs/custom_functions/get_decimal_part.md)
 - [getWholeNumber](./docs/custom_functions/get_whole_number.md)
+- [safeSubstring](./docs/custom_functions/safe_substring.md)
+- [textLength](./docs/custom_functions/text_length.md)
 
 ---
 
