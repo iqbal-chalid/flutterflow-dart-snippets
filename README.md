@@ -52,6 +52,7 @@ docs/
 
 # Custom Widgets
 
+- [CountUp](./docs/custom_widgets/count_up.md)
 - [ScrollListener](./docs/custom_widgets/scroll_listener.md)
 - [CustomVideoPlayer](./docs/custom_widgets/custom_video_player.md)
 
@@ -124,6 +125,27 @@ Useful for:
 ---
 
 # Widget Highlights
+
+## CountUp
+
+Headless count up animation widget for FlutterFlow.
+
+Unlike traditional animated counter widgets, `CountUp` does not render any visible UI.
+
+Instead, it emits animated values through a callback, allowing complete control over:
+
+- text styling
+- number formatting
+- layout
+- localization
+- custom UI rendering
+- synchronized widgets
+
+Demo:
+
+![CountUp Demo](./docs/assets/demo_count_up.gif)
+
+---
 
 ## ScrollListener
 
