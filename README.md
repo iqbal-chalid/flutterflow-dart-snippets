@@ -52,8 +52,17 @@ docs/
 
 # Custom Widgets
 
+## Headless Widgets
+
 - [CountUp](./docs/custom_widgets/count_up.md)
+- [TypingEffect](./docs/custom_widgets/typing_effect.md)
+
+## Utility Widgets
+
 - [ScrollListener](./docs/custom_widgets/scroll_listener.md)
+
+## Visual Widgets
+
 - [CustomVideoPlayer](./docs/custom_widgets/custom_video_player.md)
 
 ---
@@ -144,6 +153,23 @@ Instead, it emits animated values through a callback, allowing complete control 
 Demo:
 
 ![CountUp Demo](./docs/assets/demo_count_up.gif)
+
+---
+
+## TypingEffect
+
+Headless typing animation widget for FlutterFlow.
+
+Unlike traditional typing text widgets, `TypingEffect` does not render any visible UI.
+
+Instead, it progressively emits text through callbacks, allowing complete control over:
+
+- text styling
+- layout
+- localization
+- RichText rendering
+- custom UI rendering
+- synchronized widgets
 
 ---
 
