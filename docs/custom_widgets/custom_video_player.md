@@ -25,7 +25,7 @@ Useful for:
 
 ## Demo
 
-![CustomVideoPlayer Demo](./assets/demo_custom_video_player.gif)
+![CustomVideoPlayer Demo](../assets/demo_custom_video_player.gif)
 
 ## Features
 
@@ -42,31 +42,31 @@ Useful for:
 
 ## FlutterFlow Widget Parameters
 
-| Name                     | Type                    | Description                                  |
-| ------------------------ | ----------------------- | -------------------------------------------- |
-| width                    | double?                 | Widget width                                 |
-| height                   | double?                 | Widget height                                |
-| url                      | String                  | Video URL                                    |
-| cbProgress               | Action                  | Progress callback                            |
-| cbFinished               | Action                  | Called when video finishes                   |
-| cbBuffering              | Action                  | Called when buffering state changes          |
-| shouldPlay               | bool?                   | External play/pause control                  |
-| seekTo                   | double?                 | Seek position (`0.0 - 1.0`)                  |
-| muted                    | bool                    | Mute/unmute video                            |
-| showOverlay              | bool                    | Show built-in overlay UI                     |
-| progressUpdateIntervalMs | int                     | Progress callback throttle interval in ms    |
+| Name                     | Type    | Description                               |
+| ------------------------ | ------- | ----------------------------------------- |
+| width                    | double? | Widget width                              |
+| height                   | double? | Widget height                             |
+| url                      | String  | Video URL                                 |
+| cbProgress               | Action  | Progress callback                         |
+| cbFinished               | Action  | Called when video finishes                |
+| cbBuffering              | Action  | Called when buffering state changes       |
+| shouldPlay               | bool?   | External play/pause control               |
+| seekTo                   | double? | Seek position (`0.0 - 1.0`)               |
+| muted                    | bool    | Mute/unmute video                         |
+| showOverlay              | bool    | Show built-in overlay UI                  |
+| progressUpdateIntervalMs | int     | Progress callback throttle interval in ms |
 
 ## cbProgress Callback Parameters
 
-| Name     | Type    | Description               |
-| -------- | ------- | ------------------------- |
-| progress | double? | Current progress (`0-1`)  |
+| Name     | Type    | Description              |
+| -------- | ------- | ------------------------ |
+| progress | double? | Current progress (`0-1`) |
 
 ## cbBuffering Callback Parameters
 
-| Name         | Type  | Description              |
-| ------------ | ----- | ------------------------ |
-| isBuffering  | bool  | Current buffering state  |
+| Name        | Type | Description             |
+| ----------- | ---- | ----------------------- |
+| isBuffering | bool | Current buffering state |
 
 ## Example Behaviors
 

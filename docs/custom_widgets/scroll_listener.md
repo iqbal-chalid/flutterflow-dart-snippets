@@ -16,7 +16,7 @@ Useful for:
 
 ## Demo
 
-![ScrollListener Demo](./assets/scroll_listener_demo.gif)
+![ScrollListener Demo](../assets/scroll_listener_demo.gif)
 
 ## FlutterFlow Widget Parameters
 

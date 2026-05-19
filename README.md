@@ -40,8 +40,10 @@ docs/
 
 # Custom Functions
 
+- [asInt](./docs/custom_functions/as_int.md)
 - [formatNumber](./docs/custom_functions/format_number.md)
 - [getDecimalPart](./docs/custom_functions/get_decimal_part.md)
+- [getProgressValue](./docs/custom_functions/get_progress_value.md)
 - [getWholeNumber](./docs/custom_functions/get_whole_number.md)
 - [safeSubstring](./docs/custom_functions/safe_substring.md)
 - [textLength](./docs/custom_functions/text_length.md)
@@ -85,6 +87,39 @@ Supports:
 - emulator debugging
 - physical device debugging
 - lightweight HTTP logging workflows
+
+---
+
+# Function Highlights
+
+## asInt
+
+Helper function for converting `double` values into `int`.
+
+Useful for reducing inline expression complexity inside FlutterFlow visual builders.
+
+Commonly used together with:
+
+- animation calculations
+- interpolation values
+- progress calculations
+- dashboard counters
+- percentage-based calculations
+
+---
+
+## getProgressValue
+
+Calculates the current progress value between `0` and a target value based on step progression.
+
+Useful for:
+
+- animated counters
+- progress-based animations
+- interpolation values
+- dashboard statistics
+- custom widgets
+- step-based animations
 
 ---
 
