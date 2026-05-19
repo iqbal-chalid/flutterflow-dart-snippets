@@ -5,6 +5,8 @@ Reusable Dart snippets, utilities, widgets, and implementation patterns primaril
 The repository contains:
 
 - ready-to-copy Dart code
+- FlutterFlow custom functions
+- FlutterFlow custom actions
 - FlutterFlow custom widgets
 - FlutterFlow implementation patterns
 - required imports and dependencies
@@ -13,7 +15,7 @@ The repository contains:
 
 You can directly copy and paste the code from each `.md` documentation file into your FlutterFlow custom functions, custom actions, or custom widgets.
 
-Standalone tests are also provided to individually test and validate supported functions outside FlutterFlow.
+Standalone tests are also provided to individually test and validate supported pure Dart functions outside FlutterFlow.
 
 ---
 
@@ -22,10 +24,17 @@ Standalone tests are also provided to individually test and validate supported f
 ```text
 docs/
 ├── assets/
+├── custom_actions/
 ├── custom_functions/
 ├── custom_widgets/
 └── patterns/
 ```
+
+---
+
+# Custom Actions
+
+- [postLog](./docs/custom_actions/post_log.md)
 
 ---
 
@@ -51,6 +60,31 @@ docs/
 Implementation references and reusable FlutterFlow architecture patterns.
 
 - [ExpandableChevron](./docs/patterns/expandable_chevron.md)
+
+---
+
+# Action Highlights
+
+## postLog
+
+Simple remote logging custom action for FlutterFlow.
+
+Useful for:
+
+- debugging API flows
+- debugging authentication
+- debugging app state
+- inspecting runtime values
+- debugging physical devices
+- lightweight remote logging
+
+Supports:
+
+- simple plain text logging
+- local FastAPI logging server
+- emulator debugging
+- physical device debugging
+- lightweight HTTP logging workflows
 
 ---
 
