@@ -45,6 +45,7 @@ docs/
 - [getDecimalPart](./docs/custom_functions/get_decimal_part.md)
 - [getProgressValue](./docs/custom_functions/get_progress_value.md)
 - [getWholeNumber](./docs/custom_functions/get_whole_number.md)
+- [removeLastChar](./docs/custom_functions/remove_last_char.md)
 - [safeSubstring](./docs/custom_functions/safe_substring.md)
 - [textLength](./docs/custom_functions/text_length.md)
 
@@ -115,6 +116,21 @@ Commonly used together with:
 - progress calculations
 - dashboard counters
 - percentage-based calculations
+
+---
+
+## removeLastChar
+
+Removes the last character from a string.
+
+Useful for:
+
+- PIN input handling
+- OTP input handling
+- custom keypad implementations
+- backspace behavior
+- text manipulation
+- controlled input widgets
 
 ---
 
